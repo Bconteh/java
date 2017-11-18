@@ -1,0 +1,25 @@
+version "3"
+
+network:
+  - car {}
+  - db {}
+
+services:
+  car:
+    name: my-car
+    image: mycar-application:latest
+    ports:
+      - 8080:8080
+    network:
+      - db
+      - car
+    restart: always
+  db:
+   name: mysql
+   image: mysql:latest
+   port:
+     - 9090
+   network:
+     - car
+     - db
+   restart: always
