@@ -23,3 +23,13 @@ services:
      - car
      - db
    restart: always
+
+   nginx:
+     name: nginx
+     image: apache/nginx:2.9.0
+     expose:
+      - 8080:8000
+     restart: on-failure
+     network:
+      - car
+q
