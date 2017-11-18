@@ -11,6 +11,8 @@ public class main {
 
 		car.Owner("Buba", 27);
   		car.CarName("Mercedes Benz");
+ 		Car.YearOfProd("2017");
+ 		Car.YearOfProd("2015");
 	}
 
 }

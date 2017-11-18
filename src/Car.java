@@ -18,4 +18,7 @@ public class Car {
 	return name;
 }
 
+ 	public int YearOfProd (int year){
+        system.out.println("This car was manufactured on the year: " + year);
+	return year;
 }
